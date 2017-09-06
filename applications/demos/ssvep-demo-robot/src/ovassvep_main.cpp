@@ -14,9 +14,9 @@ using namespace OpenViBE;
 int main(int argc, char** argv)
 {
 	
-	argc = 2;
+	//argc = 2;
 	//argv[1] = "trainer";
-	argv[1] = "shooter";
+	//argv[1] = "shooter";
 	
 
 	if (argc != 2)
