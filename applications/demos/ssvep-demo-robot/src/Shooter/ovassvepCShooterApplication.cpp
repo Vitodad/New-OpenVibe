@@ -75,7 +75,7 @@ void *handle_Staubli_Move(void *ptr){
 					ret = l_args->Robot_TX60->set_move_single_axis(l_args->Robot_axis_MODE, l_args->Robot_direction);
 					l_args->Robot_TX60->move_arm();
 					wait_end_move(l_args->Robot_TX60);
-					printf("\n\n *** Movimiento de Robot: Direcci髇 %d ***\n\n", l_args->Robot_direction);
+					printf("\n\n *** Movimiento de Robot: Direcci贸n %d ***\n\n", l_args->Robot_direction);
 					l_args->Enable_Movement = false;
 				}
 				else{
@@ -233,7 +233,7 @@ void CShooterApplication::drawTextInApp()
 	m_poUPV = m_poGUIWindowManager->createWindow("TaharezLook/StaticImage", "UPV");
 	m_poUPV->setPosition(CEGUI::UVector2(cegui_absdim(875.0f), cegui_absdim(10.0f)));
 	m_poUPV->setSize(CEGUI::USize(CEGUI::UDim(0.0f, 402.0f), CEGUI::UDim(0.0f, 142.0f)));
-	//  ---- Inicializaci髇 variables de control de posici髇 ----
+	//  ---- Inicializaci贸n variables de control de posici贸n ----
 
 	m_poTextX = m_poGUIWindowManager->createWindow("TaharezLook/StaticImage", "TextX");
 	m_poTextX->setPosition(CEGUI::UVector2(cegui_absdim(350.0f), cegui_absdim(10.0f)));
@@ -260,7 +260,7 @@ void CShooterApplication::drawTextInApp()
 	m_poTextZ_G->setSize(CEGUI::USize(CEGUI::UDim(0.0f, 236.f), CEGUI::UDim(0.0f, 59.f)));
 
 	
-	//  ---- Inicializaci髇 variables de control de orientaci髇 ----
+	//  ---- Inicializaci贸n variables de control de orientaci贸n ----
 
 	m_poTextAlpha = m_poGUIWindowManager->createWindow("TaharezLook/StaticImage", "TextAlpha");
 	m_poTextAlpha->setPosition(CEGUI::UVector2(cegui_absdim(350.0f), cegui_absdim(5.0f)));
@@ -286,7 +286,7 @@ void CShooterApplication::drawTextInApp()
 	m_poTextGamma_G->setPosition(CEGUI::UVector2(cegui_absdim(350.0f), cegui_absdim(105.0f)));
 	m_poTextGamma_G->setSize(CEGUI::USize(CEGUI::UDim(0.0f, 236.f), CEGUI::UDim(0.0f, 59.f)));
 
-	//  ---- Inicializaci髇 variables de selecci髇 ----
+	//  ---- Inicializaci贸n variables de selecci贸n ----
 
 	m_poTextPosicion = m_poGUIWindowManager->createWindow("TaharezLook/StaticImage", "TextPosicion");
 	m_poTextPosicion->setPosition(CEGUI::UVector2(cegui_absdim(-20.0f), cegui_absdim(10.0f)));
@@ -305,7 +305,7 @@ void CShooterApplication::drawTextInApp()
 	m_poTextOrientacion_G->setSize(CEGUI::USize(CEGUI::UDim(0.0f, 236.f), CEGUI::UDim(0.0f, 59.f)));
 
 	
-	//  ---- Inicializaci髇 valores de precisi髇 ----
+	//  ---- Inicializaci贸n valores de precisi贸n ----
 
 	m_poText1= m_poGUIWindowManager->createWindow("TaharezLook/StaticImage", "Text1");
 	m_poText1->setPosition(CEGUI::UVector2(cegui_absdim(150.0f), cegui_absdim(110.0f)));
@@ -340,7 +340,7 @@ void CShooterApplication::drawTextInApp()
 	m_poText100_G->setSize(CEGUI::USize(CEGUI::UDim(0.0f, 236.f), CEGUI::UDim(0.0f, 59.f)));
 
 	
-	//  ---- Inicializaci髇 variable de informacion ----
+	//  ---- Inicializaci贸n variable de informacion ----
 
 	m_poTextActivo= m_poGUIWindowManager->createWindow("TaharezLook/StaticImage", "TextActivo");
 	m_poTextActivo->setPosition(CEGUI::UVector2(cegui_absdim(600.0f), cegui_absdim(10.0f)));
@@ -377,7 +377,7 @@ void CShooterApplication::drawTextInApp()
 
 #if (CEGUI_VERSION_MAJOR > 0) || (CEGUI_VERSION_MINOR >= 8)
 	m_poSheet->addChild(m_poInstructionsReady);
-	CEGUI::ImageManager::getSingleton().addFromImageFile("InstructionsReady", "InstructionText-Start-Blac.png");
+	CEGUI::ImageManager::getSingleton().addFromImageFile("InstructionsReady", "InstructionText-Start-Black.png");
 	m_poInstructionsReady->setProperty("Image", "InstructionsReady");
 
 	m_poSheet->addChild(m_poUPV);
